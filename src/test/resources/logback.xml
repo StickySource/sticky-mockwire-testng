@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+
+	<appender
+		name="CONSOLE"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss} %.-1level %thread %logger{36}: %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="net.stickycode" level="warn" />
+	<logger name="net.stickycode.mockwire" level="info" />
+	<logger name="net.stickycode.mockwire.testng" level="debug" />
+	<logger name="org.springframework" level="warn" />
+
+	<root level="info">
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>
